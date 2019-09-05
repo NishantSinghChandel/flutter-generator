@@ -1,4 +1,4 @@
-const settingsFile = ".reactgenerator";
+const settingsFile = ".fluttergenerator";
 
 const userSettings = require("user-settings").file(settingsFile);
 const fs = require("fs");
@@ -6,21 +6,9 @@ const path = require("path");
 const chalk = require("chalk");
 
 const defaultSettings = {
-  componentDestination: "./src/components/",
-  styledComponentDestination: "./src/components/",
-  tscomponentDestination: "./components/",
-  viewDestination: "./src/view/",
-  storeDestination: "./src/store/",
-  pageDestination: "./pages/",
-  tspageDestination: "./pages/",
-  reduxDestination: "./src/",
-  setupDestination: "./src/",
-  reduxModuleDestination: "./src/store/",
-  serviceModuleDestination: "./src/services/",
-  servicesDestination: "./src/",
-  configDestination: "./src/services/",
-  requestDestination: "./src/services/config/",
-  storageDestination: "./src/services/config/",
+  pageDestination: "./lib/pages",
+  blocDestination: "./lib/bloc",
+  routerDestination: "./lib",
   templatePath: ""
 };
 

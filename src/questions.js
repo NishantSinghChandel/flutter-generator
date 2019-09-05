@@ -13,161 +13,45 @@ exports.getGeneratorQuestions = function(type, settings, name) {
         askType(),
         askName(name),
         askDestination(
-          templateType.COMPONENT,
-          settings.componentDestination,
+          templateType.STATELESSPAGE,
+          settings.pageDestination,
           true
         ),
         askDestination(
-          templateType.STYLEDCOMPONENT,
-          settings.componentDestination,
+          templateType.STATEFULPAGE,
+          settings.pageDestination,
           true
         ),
-        askDestination(
-          templateType.TSCOMPONENT,
-          settings.tscomponentDestination,
-          true
-        ),
-        askDestination(templateType.PAGE, settings.pageDestination, true),
-        askDestination(templateType.TSPAGE, settings.tspageDestination, true),
-        askDestination(templateType.VIEW, settings.viewDestination, true),
-        askDestination(templateType.SETUP, settings.setupDestination, true),
-        askDestination(templateType.STORE, settings.storeDestination, true),
-        askDestination(templateType.REDUX, settings.reduxDestination, true),
-        askDestination(
-          templateType.REDUXMODULE,
-          settings.reduxModuleDestination,
-          true
-        ),
-        askDestination(
-          templateType.SERVICES,
-          settings.servicesDestination,
-          true
-        ),
-        askDestination(templateType.CONFIG, settings.configDestination, true),
-        askDestination(
-          templateType.SERVICEMODULE,
-          settings.serviceModuleDestination,
-          true
-        ),
-        askDestination(templateType.REQUEST, settings.requestDestination, true),
-        askDestination(templateType.STORAGE, settings.storageDestination, true)
+        askDestination(templateType.ROUTER, settings.routerDestination, true),
+        askDestination(templateType.BLOC, settings.blocDestination, true)
       ];
       break;
     }
-    case wizardType.STORE: {
+    case wizardType.STATELESSPAGE: {
       questions = [
         askName(name),
-        askDestination(templateType.STORE, settings.storeDestination)
+        askDestination(templateType.STATELESSPAGE, settings.pageDestination)
       ];
       break;
     }
-    case wizardType.REDUX: {
+    case wizardType.STATEFULPAGE: {
       questions = [
         askName(name),
-        askDestination(templateType.REDUX, settings.reduxDestination)
+        askDestination(templateType.STATEFULPAGE, settings.pageDestination)
       ];
       break;
     }
-    case wizardType.REDUXMODULE: {
+    case wizardType.ROUTER: {
       questions = [
         askName(name),
-        askDestination(
-          templateType.REDUXMODULE,
-          settings.reduxModuleDestination
-        )
+        askDestination(templateType.ROUTER, settings.routerDestination)
       ];
       break;
     }
-    case wizardType.SERVICES: {
+    case wizardType.BLOC: {
       questions = [
         askName(name),
-        askDestination(templateType.SERVICES, settings.servicesDestination)
-      ];
-      break;
-    }
-    case wizardType.SERVICEMODULE: {
-      questions = [
-        askName(name),
-        askDestination(
-          templateType.SERVICEMODULE,
-          settings.serviceModuleDestination
-        )
-      ];
-      break;
-    }
-    case wizardType.REQUEST: {
-      questions = [
-        askName(name),
-        askDestination(templateType.REQUEST, settings.requestDestination)
-      ];
-      break;
-    }
-    case wizardType.STORAGE: {
-      questions = [
-        askName(name),
-        askDestination(templateType.STORAGE, settings.storageDestination)
-      ];
-      break;
-    }
-    case wizardType.CONFIG: {
-      questions = [
-        askName(name),
-        askDestination(templateType.CONFIG, settings.configDestination)
-      ];
-      break;
-    }
-    case wizardType.SETUP: {
-      questions = [
-        askName(name),
-        askDestination(templateType.SETUP, settings.setupDestination)
-      ];
-      break;
-    }
-    case wizardType.COMPONENT: {
-      questions = [
-        askName(name),
-        askDestination(templateType.COMPONENT, settings.componentDestination)
-      ];
-      break;
-    }
-    case wizardType.STYLEDCOMPONENT: {
-      questions = [
-        askName(name),
-        askDestination(
-          templateType.STYLEDCOMPONENT,
-          settings.componentDestination
-        )
-      ];
-      break;
-    }
-    case wizardType.VIEW: {
-      questions = [
-        askName(name),
-        askDestination(templateType.VIEW, settings.viewDestination)
-      ];
-      break;
-    }
-    case wizardType.TSCOMPONENT: {
-      questions = [
-        askName(name),
-        askDestination(
-          templateType.TSCOMPONENT,
-          settings.tscomponentDestination
-        )
-      ];
-      break;
-    }
-    case wizardType.PAGE: {
-      questions = [
-        askName(name),
-        askDestination(templateType.PAGE, settings.pageDestination)
-      ];
-      break;
-    }
-    case wizardType.TSPAGE: {
-      questions = [
-        askName(name),
-        askDestination(templateType.TSPAGE, settings.tspageDestination)
+        askDestination(templateType.BLOC, settings.blocDestination)
       ];
       break;
     }
