@@ -1,6 +1,6 @@
-import 'package:drift_pilot_app/models/request/{{name_sc}}_request.dart';
-import 'package:drift_pilot_app/models/response/{{name_sc}}_response.dart';
-import 'package:drift_pilot_app/repository/{{name_sc}}_repository.dart';
+import 'package:drift_pilot_app/models/request/{{name_sn}}_request.dart';
+import 'package:drift_pilot_app/models/response/{{name_sn}}_response.dart';
+import 'package:drift_pilot_app/repository/{{name_sn}}_repository.dart';
 import 'package:flutter/material.dart';
 import 'package:rxdart/rxdart.dart';
 import 'base_bloc.dart';
