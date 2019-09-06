@@ -13,7 +13,7 @@ $ npm install -g flutter-generator
 The most basic command runs a wizard to create a page.
 
 ```console
-$ fg
+$ dg
 ```
 
 **Note**: Names can be given in any format (slug-case, camelCase, PascalCase, UPPERCASE, lowercase etc.).
@@ -23,7 +23,7 @@ $ fg
 Directly create a component based on the current settings with stateful widget.
 
 ```console
-$ fg stateful-page <name>
+$ dg stateful-page <name>
 ```
 
 Arguments:
@@ -40,9 +40,9 @@ Options:
 Examples:
 
 ```console
-$ fg stateful-page  home-page
-$ fg stateful-page  setting-page -d ./my-component/ui
-$ fg stateful-page  detail-page -d ./src/widget/players/ -t details -f
+$ dg stateful-page  home-page
+$ dg stateful-page  setting-page -d ./my-component/ui
+$ dg stateful-page  detail-page -d ./src/widget/players/ -t details -f
 ```
 
 The generated file will be
@@ -56,7 +56,7 @@ $ home_page.dart
 Directly create a component based on the current settings with stateless widget.
 
 ```console
-$ fg stateless-page <name>
+$ dg stateless-page <name>
 ```
 
 Arguments:
@@ -73,9 +73,9 @@ Options:
 Examples:
 
 ```console
-$ fg stateless-page  home-page
-$ fg stateless-page  setting-page -d ./my-component/ui
-$ fg stateless-page  detail-page -d ./src/widget/players/ -t details -f
+$ dg stateless-page  home-page
+$ dg stateless-page  setting-page -d ./my-component/ui
+$ dg stateless-page  detail-page -d ./src/widget/players/ -t details -f
 ```
 
 The generated file will be
@@ -89,7 +89,7 @@ $ home_page.dart
 Directly create a bloc module based on the current settings.
 
 ```console
-$ fg bloc <name>
+$ dg bloc <name>
 ```
 
 Arguments:
@@ -105,9 +105,9 @@ Options:
 Examples:
 
 ```
-$ fg bloc user
-$ fg bloc shopping-cart -d ./modules
-$ fg bloc Car -t bloc
+$ dg bloc user
+$ dg bloc shopping-cart -d ./modules
+$ dg bloc Car -t bloc
 ```
 
 The generated file will be
@@ -122,7 +122,7 @@ Set or display settings. Without any options it will display the settings. By de
 You can also set global settings by using the global option `-g --global`.
 
 ```console
-$ fg settings
+$ dg settings
 ```
 
 Options:
@@ -137,9 +137,9 @@ Options:
 Examples:
 
 ```console
-$ fg settings -l
-$ fg settings -v ./view -c ./widgets -s ./models/store -t ./template
-$ fg settings -g -c ./widgets
+$ dg settings -l
+$ dg settings -v ./view -c ./widgets -s ./models/store -t ./template
+$ dg settings -g -c ./widgets
 ```
 
 #### reset
@@ -147,7 +147,7 @@ $ fg settings -g -c ./widgets
 Reset global settings to the defaults.
 
 ```console
-$ fg reset
+$ dg reset
 ```
 
 #### show-templates
@@ -155,14 +155,14 @@ $ fg reset
 Open the default template directory. The default templates can be edited to fit your needs.
 
 ```console
-$ fg show-templates
+$ dg show-templates
 ```
 
 #### copy-templates
 
 Copy the default templates to another directory. This is handy when you want to customize the default templates.
-Don't forget to run `fg init` or set the template path with `fg settings`.
+Don't forget to run `dg init` or set the template path with `dg settings`.
 
 ```console
-$ fg copy-templates
+$ dg copy-templates
 ```

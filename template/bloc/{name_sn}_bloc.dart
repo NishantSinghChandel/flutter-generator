@@ -19,7 +19,7 @@ class {{name_pc}}Bloc extends BaseBloc {
 
   @override
   void onInit(BuildContext context) {
-    // _{{name_cc}}Repository = {{name_pc}}Repository(context);
+    _{{name_cc}}Repository = {{name_pc}}Repository(context);
   }
 
   @override
