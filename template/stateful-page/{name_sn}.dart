@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class {{name_pc}} extends StatefulWidget {
   // {{name_pc}}();
   @override
-  _{{name_pc}}State<StatefulWidget> createState()=> _{{name_pc}}State();
+  _{{name_pc}}State createState()=> _{{name_pc}}State();
 }
 
 class _{{name_pc}}State extends State<{{name_pc}}> {
