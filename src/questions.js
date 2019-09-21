@@ -14,12 +14,12 @@ exports.getGeneratorQuestions = function(type, settings, name) {
         askName(name),
         askDestination(
           templateType.STATELESSPAGE,
-          settings.pageDestination,
+          settings.statelessPageDestination,
           true
         ),
         askDestination(
           templateType.STATEFULPAGE,
-          settings.pageDestination,
+          settings.statefulPageDestination,
           true
         ),
         askDestination(templateType.ROUTER, settings.routerDestination, true),
@@ -30,14 +30,20 @@ exports.getGeneratorQuestions = function(type, settings, name) {
     case wizardType.STATELESSPAGE: {
       questions = [
         askName(name),
-        askDestination(templateType.STATELESSPAGE, settings.pageDestination)
+        askDestination(
+          templateType.STATELESSPAGE,
+          settings.statelessPageDestination
+        )
       ];
       break;
     }
     case wizardType.STATEFULPAGE: {
       questions = [
         askName(name),
-        askDestination(templateType.STATEFULPAGE, settings.pageDestination)
+        askDestination(
+          templateType.STATEFULPAGE,
+          settings.statefulPageDestination
+        )
       ];
       break;
     }

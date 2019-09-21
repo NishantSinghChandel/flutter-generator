@@ -6,7 +6,8 @@ const path = require("path");
 const chalk = require("chalk");
 
 const defaultSettings = {
-  pageDestination: "./lib/pages",
+  statefulPageDestination: "./lib/pages",
+  statelessPageDestination: "./lib/pages",
   blocDestination: "./lib/bloc",
   routerDestination: "./lib",
   templatePath: ""
